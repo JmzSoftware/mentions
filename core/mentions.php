@@ -358,7 +358,7 @@ class mentions
 		// Now the difficult part. Let's see if we can get the correct usernames for the @{username} mentions
 		if ($this->config['wolfsblvt.mentions.active_at']) // ACP config will come later
 		{
-			$regular_expression_match = '#(?:^|\\s)@(.+?)(?:\n|$)#';
+			$regular_expression_match = '#(?:^|)@(.+?)(?:\n|$)#';
 			$matches = false;
 			$offset = 0;
 			$maximum_at_mentions = $this->config['wolfsblvt.mentions.maximum_at_mentions_per_post'];
